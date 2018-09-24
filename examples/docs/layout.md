@@ -25,22 +25,22 @@
 
   ::: demo 
   ``` html
-  <j-row>
-    <j-col :span=24><div class="grid-content bg-purple-dark"></div></j-col>
-  </j-row>
-  <j-row class="m-10">
-    <j-col :span=8><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span=8><div class="grid-content bg-purple-light"></div></j-col>
-    <j-col :span=8><div class="grid-content bg-purple"></div></j-col>
-  </j-row>
-  <j-row class="m-10">
-    <j-col :span=4><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span=4><div class="grid-content bg-purple-light"></div></j-col>
-    <j-col :span=4><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span=4><div class="grid-content bg-purple-light"></div></j-col>
-    <j-col :span=4><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span=4><div class="grid-content bg-purple-light"></div></j-col>
-  </j-row>
+  <kd-row>
+    <kd-col :span=24><div class="grid-content bg-purple-dark"></div></kd-col>
+  </kd-row>
+  <kd-row class="m-10">
+    <kd-col :span=8><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span=8><div class="grid-content bg-purple-light"></div></kd-col>
+    <kd-col :span=8><div class="grid-content bg-purple"></div></kd-col>
+  </kd-row>
+  <kd-row class="m-10">
+    <kd-col :span=4><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span=4><div class="grid-content bg-purple-light"></div></kd-col>
+    <kd-col :span=4><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span=4><div class="grid-content bg-purple-light"></div></kd-col>
+    <kd-col :span=4><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span=4><div class="grid-content bg-purple-light"></div></kd-col>
+  </kd-row>
 
   ```
   :::
@@ -62,12 +62,12 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
 
   ::: demo
   ``` html
-  <j-row :gutter=20>
-    <j-col :span="6"><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span="6"><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span="6"><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span="6"><div class="grid-content bg-purple"></div></j-col>
-  </j-row>
+  <kd-row :gutter=20>
+    <kd-col :span="6"><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span="6"><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span="6"><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span="6"><div class="grid-content bg-purple"></div></kd-col>
+  </kd-row>
   ```
   :::
 </div>
@@ -95,21 +95,21 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
 
   ::: demo
   ```html
-  <j-row :gutter=20>
-    <j-col :span=16><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span=8><div class="grid-content bg-purple"></div></j-col>
-  </j-row>
-  <j-row :gutter=20 class="m-10">
-    <j-col :span=8><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span=8><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span=4><div class="grid-content bg-purple"></div></j-col>
-    <j-col :span=4><div class="grid-content bg-purple"></div></j-col>
-  </j-row>
-  <j-row :gutter=20 class="m-10">
-    <j-col :span=4><div class="grid-column bg-purple"></div></j-col>
-    <j-col :span=16><div class="grid-column bg-purple"></div></j-col>
-    <j-col :span=4><div class="grid-column bg-purple"></div></j-col>
-  </j-row>
+  <kd-row :gutter=20>
+    <kd-col :span=16><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span=8><div class="grid-content bg-purple"></div></kd-col>
+  </kd-row>
+  <kd-row :gutter=20 class="m-10">
+    <kd-col :span=8><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span=8><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span=4><div class="grid-content bg-purple"></div></kd-col>
+    <kd-col :span=4><div class="grid-content bg-purple"></div></kd-col>
+  </kd-row>
+  <kd-row :gutter=20 class="m-10">
+    <kd-col :span=4><div class="grid-column bg-purple"></div></kd-col>
+    <kd-col :span=16><div class="grid-column bg-purple"></div></kd-col>
+    <kd-col :span=4><div class="grid-column bg-purple"></div></kd-col> 
+  </kd-row>
 
   ```
   :::
@@ -134,16 +134,16 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
 
   ::: demo
   ``` html
-    <j-row :gutter=20>
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-    </j-row>
-    <j-row :gutter=20 class="m-10">
-      <j-col :span=6 :offset=6><div class="grid-content bg-purple"></div></j-col>
-      <j-col :span=6 :offset=6><div class="grid-content bg-purple"></div></j-col>
-    </j-row><j-row :gutter=20 class="m-10">
-      <j-col :span=12 :offset=6><div class="grid-content bg-purple"></div></j-col>
-    </j-row>
+    <kd-row :gutter=20>
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+    </kd-row>
+    <kd-row :gutter=20 class="m-10">
+      <kd-col :span=6 :offset=6><div class="grid-content bg-purple"></div></kd-col>
+      <kd-col :span=6 :offset=6><div class="grid-content bg-purple"></div></kd-col>
+    </kd-row><j-row :gutter=20 class="m-10">
+      <kd-col :span=12 :offset=6><div class="grid-content bg-purple"></div></kd-col>
+    </kd-row>
 
   ```
   :::
@@ -185,31 +185,31 @@ Row 组件 提供 ```gutter``` 属性来指定每一栏之间的间隔，默认�
 
   :::demo
   ```html
-  <j-row type="flex" class="row-bg">
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple-light"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-    </j-row>
-    <j-row type="flex" class="row-bg m-10" justify="center">
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple-light"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-    </j-row>
-    <j-row type="flex" class="row-bg m-10" justify="end">
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple-light"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-    </j-row>
-    <j-row type="flex" class="row-bg m-10" justify="space-between">
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple-light"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-    </j-row>
-    <j-row type="flex" class="row-bg m-10" justify="space-around">
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple-light"></div></j-col>
-      <j-col :span=6><div class="grid-content bg-purple"></div></j-col>
-    </j-row>
+  <kd-row type="flex" class="row-bg">
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple-light"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+    </kd-row>
+    <kd-row type="flex" class="row-bg m-10" kdustify="center">
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple-light"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+    </kd-row>
+    <kd-row type="flex" class="row-bg m-10" kdustify="end">
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple-light"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+    </kd-row>
+    <kd-row type="flex" class="row-bg m-10" kdustify="space-between">
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple-light"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+    </kd-row>
+    <kd-row type="flex" class="row-bg m-10" kdustify="space-around">
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple-light"></div></kd-col>
+      <kd-col :span=6><div class="grid-content bg-purple"></div></kd-col>
+    </kd-row>
 
   ```
   :::
