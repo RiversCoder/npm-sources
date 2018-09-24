@@ -1,6 +1,6 @@
 {
-  "name": "kd-ui",
-  "version": "1.0.9",
+  "name": "kedun-ui",
+  "version": "1.0.10",
   "description": "UI base on Vue",
   "main": "index.js",
   "scripts": {
