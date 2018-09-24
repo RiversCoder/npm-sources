@@ -17,7 +17,7 @@
 >1. npm intall
 >2. npm run dev
 
-## 使用jk-ui
+## 使用 kedun-ui
 >1. `npm install --save kedun-ui`
 >2. 在Vue项目里的`main.js`
 >>`import KDUI from 'kedun-ui'`<br/>
