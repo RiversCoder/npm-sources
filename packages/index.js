@@ -11,6 +11,7 @@ import WLimitTextArea from './limit-textarea/index'
 import MetaInfo from './meta-info/index'
 import WAlert from './alert/index'
 import WLoadingBar from './loading-bar/index'
+import WMessaageAlert from './message-alert/index'
 import Skeleton from './skeleton/index'
 
 const components = [
@@ -29,6 +30,7 @@ const install = function(Vue) {
   components.map(component => Vue.component(component.name, component))
   MetaInfo.install(Vue)
   Vue.prototype.$loading = WLoadingBar
+  Vue.prototype.$wmessage = WMessaageAlert
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

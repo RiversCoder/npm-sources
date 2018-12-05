@@ -12,6 +12,7 @@ let timer = null, removeTimer = null
 let WLoadingBar = () => {
   return new LoadingBarConstructor()
 }
+
 LoadingBarConstructor.prototype.config = function (options) {
   Object.keys(options).forEach((key) => {
     if (key === 'isError' || key === 'totalProgress') {
