@@ -11,23 +11,23 @@ let WMessageAlert = () => {
     return new MessageAlertConstructor()
 };
 
-MessageAlertConstructor.prototype.show = function(attr){
+MessageAlertConstructor.prototype.show = function(attr,callback2){
  
-  this.vm = this.$mount()
-  let data = JSON.parse(JSON.stringify(this.vm.$data));
+  this.vm = this.$mount();
   this.vm.$data.showInfos = attr;
   this.vm.$data.showMessageBox = true;
   document.body.appendChild(this.vm.$el)
-  //console.log(this.vm.$watch);
-  return new Promise(() => {
-    let unwatch = this.vm.$watch('showMessageBox',function(newValue,oldValue){
-      console.log(newValue,oldvalue);
-      if(newValue !== oldvalue && newValue){
-        resolve('123');
-        unwatch();
-      }
-    })
-  })
+
+
+  let unwatch = this.vm.$watch(() => {
+    return this.vm.$data.clickOk;
+  },function(value){
+    if(!this.vm.$data.showMessageBox && value){
+      console.log(value);
+      console.log(typeof callback2)
+    }
+  });
+
 };
 
 MessageAlertConstructor.prototype.hide = function(){

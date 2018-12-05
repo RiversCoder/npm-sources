@@ -19,8 +19,9 @@
         this.$wmessage.show({
           type: 'normal',
           info: '这是一条一般信息'
-        }).then(res => {
-          console.log(res);
+        },res => {
+          res();
+          console.log('res: '+ res);
         });
       },
       showMessageWarning(){

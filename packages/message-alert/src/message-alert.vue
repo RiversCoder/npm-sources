@@ -36,6 +36,7 @@
                     error: '×'
                 },
                 showMessageBox: false,
+                clickOk: false
             }
         },
         props:{
@@ -49,11 +50,14 @@
         },
         methods:{
             closeMessageBox(status){
-                // this.showMessageBox = false;
                 if(status == 'sure'){
-                    console.log('确定按钮');
-                    this.showMessageBox = false;
+                    this.clickOk = true;
+                    console.log('点击确定');
+                }else{
+                    this.clickOk = false;
                 }
+                this.showMessageBox = false;
+                this.clickOk
             },
             confirmMessage(){
                 console.log('confirmMessage');
