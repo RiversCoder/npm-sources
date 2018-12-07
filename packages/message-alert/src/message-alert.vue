@@ -12,8 +12,8 @@
                     <span class="wmai-menus-btn wmai-menus-btn-ok">确定</span>
                 </div> -->
                 <div class="wmai-menus-box">
-                    <span class="wmai-menus-btn wmai-menus-btn-ok" @click="closeMessageBox('sure')">确定</span>
-                    <span class="wmai-menus-btn wmai-menus-btn-cancel" v-if="showInfos.type==='warning'" @click="closeMessageBox('cancel')">取消</span>
+                    <span class="wmai-menus-btn wmai-menus-btn-ok" @click="clickSureCancel('sure')">确定</span>
+                    <span class="wmai-menus-btn wmai-menus-btn-cancel" v-if="showInfos.type==='warning'" @click="clickSureCancel('cancel')">取消</span>
                 </div>
             </div>
         </div>
@@ -27,7 +27,13 @@
             return {
                 showInfos:{
                     type: '',
-                    info: ''
+                    info: '',
+                    sure: function(){
+                        console.log('ok');
+                    },
+                    cancel: function(){
+                        console.log('cancel');
+                    }
                 },
                 icons:{
                     normal: '',
@@ -49,15 +55,24 @@
             }
         },
         methods:{
+            // 点击确定或者取消按钮
+            clickSureCancel(status){
+                if(status == 'sure'){
+                    this.showInfos.sure();
+                    this.showMessageBox = false;
+                }else if(status == 'cancel'){
+                    this.showInfos.cancel();
+                    this.showMessageBox = false;
+                }
+            },
             closeMessageBox(status){
                 if(status == 'sure'){
                     this.clickOk = true;
-                    console.log('点击确定');
+                    this.okClose();
                 }else{
                     this.clickOk = false;
+                    this.cancelClose();
                 }
-                this.showMessageBox = false;
-                this.clickOk
             },
             confirmMessage(){
                 console.log('confirmMessage');
