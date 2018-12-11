@@ -29,8 +29,8 @@ const page = {
 // npm组件库
 const plugin = {
   output: {
-    path: config.bundle.assetsRoot,
-    publicPath: config.bundle.assetsPublicPath,
+    path: config.build.assetsRoot,
+    publicPath: config.build.assetsPublicPath,
     filename: 'vue-marquee.min.js',
     library: 'VueMarquee',
     libraryTarget: 'umd'
