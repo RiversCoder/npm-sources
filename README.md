@@ -10,7 +10,7 @@
 # VV UI
 
 `VV-UI` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
-[演示地址](https://vv-ui.github.io/VV-UI)
+[演示地址](https://riverscoder.github.io/npm-sources/dist/index.html)
 
 <p align="center">
   <a href="https://github.com/feross/standard">
